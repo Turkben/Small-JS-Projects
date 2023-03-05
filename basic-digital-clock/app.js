@@ -6,9 +6,9 @@ const tick = () => {
   const s = now.getSeconds();
   console.log(h, m, s);
   const html = `
-  <span>${h}</span> : 
-  <span>${m}</span> : 
-  <span>${s}</span> 
+ <span>${h.toString().padStart(2, "0")}</span> : 
+  <span>${m.toString().padStart(2, "0")}</span> : 
+  <span>${s.toString().padStart(2, "0")}</span> 
   `;
 
   clock.innerHTML = html;
